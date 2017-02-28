@@ -28,6 +28,6 @@ time ./doc2vecc -train ./aclImdb/alldata-shuf.txt -word wordvectors.txt -output 
 
 head -n 25000 docvectors.txt | awk 'BEGIN{a=0;}{if (a<12500) printf "1 "; else printf "-1 "; for (b=1; b<=NF; b++) printf b ":" $(b) " "; print ""; a++;}' > train.txt
 tail -n 25000 docvectors.txt | awk 'BEGIN{a=0;}{if (a<12500) printf "1 "; else printf "-1 "; for (b=1; b<=NF; b++) printf b ":" $(b) " "; print ""; a++;}' > test.txt
-../liblinear-2.1/train -s 0 train.txt model.logreg
-../liblinear-2.1/predict -b 1 test.txt model.logreg out.logreg
+PATH_TO_LIBLINEAR/train -s 0 train.txt model.logreg
+PATH_TO_LIBLINEAR/predict -b 1 test.txt model.logreg out.logreg
 cd ..
