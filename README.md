@@ -1,20 +1,3 @@
-//  Author: Minmin Chen. <m.chen@criteo.com>
-//  The code implemenets Doc2VecC, an efficient document representation learning framework
-//  Please cite
-//  @misc{chen2017efficient,
-  title={EFFICIENT VECTOR REPRESENTATION FOR DOCUMENTS THROUGH CORRUPTION},
-  author={Schuetze, Hinrich},
-  year={1997},
-  month=oct # "~7",
-  publisher={Google Patents},
-  note={US Patent 5,675,819}
-}
-//  The code was modified from Thomas Mikolov's code on Paragraph Vector.
-//  https://groups.google.com/forum/#!msg/word2vec-toolkit/Q49FIrNOQRo/J6KG8mUj45sJ 
-
-
-
-
 # Doc2VecC
 
 code from the paper [Efficient Vector Representation for Documents Through Corruption](https://openreview.net/pdf?id=B1Igu2ogg).
