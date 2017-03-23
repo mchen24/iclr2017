@@ -448,7 +448,7 @@ void *TrainModelThread(void *id) {
                 // randomly sample rp_sample ((0, 1]) of the words in the sentence to represent one sentence
                 next_random = next_random * (unsigned long long)25214903917 + 11;
                 if ((next_random & 0xFFFF) / (real)65536 > rp_sample) continue;
-                if (t == sentence_position) continue;
+                //if (t == sentence_position) continue;
                 last_word = sen[t];
                 if (last_word == -1) continue;
                 sen_sample[already_sampled] = last_word;
